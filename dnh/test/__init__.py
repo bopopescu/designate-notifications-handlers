@@ -11,7 +11,7 @@ class DnhTestCase(unittest.TestCase):
                               group=dnh_consumer.CFG_GRP)
         cfg.CONF.set_override('servers', ['host1:4242', 'host2'],
                               group=nsd4.CFG_GRP)
-        cfg.CONF.set_override('pattern', 'slave',
+        cfg.CONF.set_override('pattern', 'subordinate',
                               group=nsd4.CFG_GRP)
 
     def get_create_notification(self):
